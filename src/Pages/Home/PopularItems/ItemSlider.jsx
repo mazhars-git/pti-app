@@ -7,7 +7,7 @@ import '../PopularItems/PopularItems.css';
 
 const ItemSlider = () => {
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 5,
@@ -22,7 +22,6 @@ const ItemSlider = () => {
             .then(data => setCardInfo(data.Items));
     }, [])
     return (
-
         <Slider {...settings}>
             {  
                 cardInfo.map((item) =>

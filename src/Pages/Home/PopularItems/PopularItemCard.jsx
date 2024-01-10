@@ -5,7 +5,7 @@ const PopularItemCard = ({ item }) => {
 
     return (
         <div>
-            <div className=''><img className="px-2 rounded-xl min-h-screen" src={ImageUrl} alt="" /></div>
+            <div className=''><img className="px-2 rounded-2xl h-64" src={ImageUrl} alt="" /></div>
             <p className='text-center pt-1'>{Name}</p>
         </div>
     );
