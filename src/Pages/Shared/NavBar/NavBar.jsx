@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
-    
+
     return (
         <div className="navbar bg-base-100">
             <div className="flex-1">
@@ -12,7 +12,6 @@ const NavBar = () => {
                 <div className="form-control">
                     <input type="text" placeholder="Search Audio book" className="input input-bordered w-44" />
                 </div>
-
 
                 <div className="">
                     <ul className="menu menu-horizontal px-1">
