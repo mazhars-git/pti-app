@@ -1,0 +1,17 @@
+.slick-prev:before{
+    color: red;
+}
+
+.slick-next:before{
+    color: red;
+}
+.slick-prev{
+    top: -17px;
+    left: auto;
+    right: 20px;
+}
+.slick-next{
+    top: -17px;
+    right: 0px;
+}
+

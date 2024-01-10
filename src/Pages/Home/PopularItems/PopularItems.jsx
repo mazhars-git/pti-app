@@ -1,26 +1,35 @@
-import React, { useEffect, useState } from 'react';
-import PopularCard from './PopularCard';
+import React from 'react';
+import ItemSlider from './ItemSlider';
 
 const PopularItems = () => {
-    const [cardInfo, setCardInfo] = useState([]);
-
-    useEffect(() => {
-        fetch('http://www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10')
-        .then(res => res.json())
-        .then(data => setCardInfo(data.Items));
-    }, [])
-
-    console.log(cardInfo)
     return (
         <div className="py-5">
-            <div className="flex justify-between">
+            <div className="flex justify-between pb-2">
                 <p className="font-semibold">Popular</p>
-                <p className="text-orange-500 font-semibold">Add More</p>
+
+                {/* add items by modal */}
+                <div>
+                    {/* Open the modal using document.getElementById('ID').showModal() method */}
+                    <button className="text-orange-500 font-semibold mx-10" onClick={() => document.getElementById('my_modal_5').showModal()}>Add More</button>
+                    <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+                        <div className="modal-box">
+                            <h3 className="font-bold text-lg">Hello!</h3>
+                            <p className="py-4">Press ESC key or click the button below to close</p>
+                            <div className="modal-action">
+                                <form method="dialog">
+                                    {/* if there is a button in form, it will close the modal */}
+                                    <button className="btn">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
             </div>
-            <div className="grid grid-cols-4">
-                {
-                   cardInfo.map(item => <PopularCard key={item.id} item={item}></PopularCard>)
-                }
+
+            {/*-------card items-----------*/}
+
+            <div className="">
+                <ItemSlider></ItemSlider>
             </div>
         </div>
     );
