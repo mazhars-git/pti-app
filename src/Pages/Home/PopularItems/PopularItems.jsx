@@ -11,7 +11,7 @@ const PopularItems = () => {
       const onSubmit = (data) => console.log(data)
     
     return (
-        <div className="py-5">
+        <div className="pt-10">
             <div className="flex justify-between pb-2">
                 <p className="font-semibold">Popular</p>
 
@@ -26,7 +26,7 @@ const PopularItems = () => {
                                 <form onSubmit={handleSubmit(onSubmit)}>
                                     <label htmlFor="itemName">Item Name</label>
                                     <input
-                                        className='input form-control input-bordered'
+                                        className='input form-control input-bordered mt-2'
                                         id="itemName"
                                         {...register("itemName", { required: true, maxLength: 30 })}
                                     />
@@ -36,7 +36,8 @@ const PopularItems = () => {
                                     {errors.name && errors.name.type === "maxLength" && (
                                         <span>Max length exceeded</span>
                                     )} <br />
-                                    <input className='form-control' type="file" /> <br />
+                                    <label htmlFor="file">Upload Image</label>
+                                    <input className='form-control pt-2' type="file" name='file' /> <br />
                                     <input className='btn' type="submit" />
                                 </form>
                             </div>
