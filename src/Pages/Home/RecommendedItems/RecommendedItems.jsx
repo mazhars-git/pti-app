@@ -17,7 +17,7 @@ const RecommendedItems = () => {
                 {/* add items by modal */}
                 <div>
                     {/* Open the modal using document.getElementById('ID').showModal() method */}
-                    <button className="text-orange-500 font-semibold mx-10" onClick={() => document.getElementById('my_modal_5').showModal()}>Add More</button>
+                    <button className="text-orange-500 font-semibold mr-12" onClick={() => document.getElementById('my_modal_5').showModal()}>Add More</button>
                     <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
                         <div className="modal-box">
 

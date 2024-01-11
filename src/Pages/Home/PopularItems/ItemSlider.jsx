@@ -4,16 +4,9 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../PopularItems/PopularItems.css';
+import autoprefixer from 'autoprefixer';
 
 const ItemSlider = () => {
-    var settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 4
-    };
-
     const [cardInfo, setCardInfo] = useState([]);
 
     useEffect(() => {
@@ -21,6 +14,13 @@ const ItemSlider = () => {
             .then(res => res.json())
             .then(data => setCardInfo(data.Items));
     }, [])
+    var settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 4
+    };    
     return (
         <Slider {...settings}>
             {  
