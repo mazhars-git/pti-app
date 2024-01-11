@@ -1,7 +1,15 @@
 import React from 'react';
 import ItemSlider from './ItemSlider';
+import { useForm } from "react-hook-form"
 
 const PopularItems = () => {
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+      } = useForm()
+      const onSubmit = (data) => console.log(data)
+    
     return (
         <div className="py-5">
             <div className="flex justify-between pb-2">
@@ -14,8 +22,24 @@ const PopularItems = () => {
                     <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
                         <div className="modal-box">
 
-                            <h3 className="font-bold text-lg">Hello!</h3>
-                            <p className="py-4">Press ESC key or click the button below to close</p>
+                            <div>
+                                <form onSubmit={handleSubmit(onSubmit)}>
+                                    <label htmlFor="itemName">Item Name</label>
+                                    <input
+                                        className='input form-control input-bordered'
+                                        id="itemName"
+                                        {...register("itemName", { required: true, maxLength: 30 })}
+                                    />
+                                    {errors.name && errors.name.type === "required" && (
+                                        <span>This is required</span>
+                                    )}
+                                    {errors.name && errors.name.type === "maxLength" && (
+                                        <span>Max length exceeded</span>
+                                    )} <br />
+                                    <input className='form-control' type="file" /> <br />
+                                    <input className='btn' type="submit" />
+                                </form>
+                            </div>
 
 
                             <div className="modal-action">
