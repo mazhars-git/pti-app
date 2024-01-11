@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.input-sub{
+    position: absolute;
+}
+
+.btn-subscribe{
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 28px;
+    background: orangered;
+    color: #fff;
+    border-radius: 12px;
+    position: relative;
+    top: 8px;
+    left: 250px;   
+}

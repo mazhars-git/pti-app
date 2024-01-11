@@ -1,7 +1,8 @@
 import footerIm from '../../../assets/images/image2.png';
 import { TiSocialTwitter } from "react-icons/ti";
 import { SlSocialInstagram } from "react-icons/sl";
-import { FaGoogle } from "react-icons/fa";
+import { FaGoogle, FaLongArrowAltRight } from "react-icons/fa";
+import './Footer.css';
 
 const Footer = () => {
     return (
@@ -10,8 +11,8 @@ const Footer = () => {
                 <nav className="mt-10">
                     <div>
                         <div>
-                            <input type="email" className="input input-bordered input-md w-96 rounded-2xl" placeholder='Enter Your Email' name="" id="" />
-                            <button className="btn rounded-2xl">Subscribe</button>
+                            <input type="email" className="input input-bordered input-md w-96 rounded-2xl input-sub" placeholder='Enter Your Email' name="" id="" />
+                            <button className="btn-subscribe">Subscribe <FaLongArrowAltRight /></button>
                         </div>
                     </div>
 
