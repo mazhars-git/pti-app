@@ -11,7 +11,7 @@ const PopularItems = () => {
       const onSubmit = (data) => console.log(data)
     
     return (
-        <div className="pt-10">
+        <div className="max-w-screen-lg mx-auto pt-10">
             <div className="flex justify-between pb-2">
                 <p className="font-semibold">Popular</p>
 

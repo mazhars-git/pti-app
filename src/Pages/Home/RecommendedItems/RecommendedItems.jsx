@@ -10,7 +10,7 @@ const RecommendedItems = () => {
       } = useForm()
       const onSubmit = (data) => console.log(data)
     return (
-        <div className="pt-7 pb-12">
+        <div className="max-w-screen-lg mx-auto pt-7 pb-12">
             <div className="flex justify-between pb-2">
                 <p className="font-semibold">Recommended</p>
 

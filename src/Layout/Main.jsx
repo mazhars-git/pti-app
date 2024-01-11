@@ -6,7 +6,7 @@ import RecommendedItems from '../Pages/Home/RecommendedItems/RecommendedItems';
 
 const Main = () => {
     return (
-        <div className='container'>
+        <div className=''>
             <NavBar></NavBar>
             <Outlet></Outlet>
             <PopularItems></PopularItems>
