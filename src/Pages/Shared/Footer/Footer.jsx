@@ -7,7 +7,7 @@ import './Footer.css';
 const Footer = () => {
     return (
         <footer className="bg-amber-500">
-            <div className="flex justify-between max-w-screen-lg mx-auto footer text-base-content">
+            <div className="flex-col justify-between max-w-screen-lg mx-auto footer text-base-content">
                 <nav className="mt-10">
                     <div>
                         <div>
