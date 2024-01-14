@@ -16,7 +16,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col-2 gap-10">
+                    <div className="grid grid-cols-2 gap-10">
                         <nav className="mt-20">
                             <header className="footer-title text-4xl lowercase pb-2 text-black">pti<span className='text-orange-600'>.</span></header>
                             <p className="font-semibold text-md">Copyright&copy;Tripp.All Right Reserved</p>
