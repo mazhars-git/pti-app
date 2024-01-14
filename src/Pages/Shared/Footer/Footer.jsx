@@ -7,7 +7,7 @@ import './Footer.css';
 const Footer = () => {
     return (
         <footer className="bg-amber-500">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pl-5 md:pl-0 max-w-screen-lg mx-auto text-base-content">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-5 md:pl-0 max-w-screen-lg mx-auto text-base-content">
                 <div className="mt-10">
                     <div className="w-full">
                         <div className="wrapper">
