@@ -16,10 +16,10 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-10">
+                    <div className="grid grid-cols-2 gap-5">
                         <nav className="mt-20">
                             <header className="footer-title text-4xl lowercase pb-2 text-black">pti<span className='text-orange-600'>.</span></header>
-                            <p className="font-semibold text-md">Copyright&copy;Tripp.All Right Reserved</p>
+                            <p className="font-semibold text-[10px] md:text-sm">Copyright&copy;Tripp.All Right Reserved</p>
                         </nav>
                         <nav className="mt-28">
                             <ul className='flex gap-2 justify-end md:justify-center'>
@@ -31,7 +31,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className=''>
+                <div className='flex justify-center md:justify-end'>
                     <img className="w-auto md:w-96" src={footerIm} alt="footer-image" />
                 </div>
             </div>
