@@ -7,10 +7,10 @@ import './Footer.css';
 const Footer = () => {
     return (
         <footer className="bg-amber-500">
-            <div className="flex-col justify-between max-w-screen-lg mx-auto footer text-base-content">
-                <nav className="mt-10">
-                    <div>
-                        <div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pl-5 md:pl-0 max-w-screen-lg mx-auto text-base-content">
+                <div className="mt-10">
+                    <div className="w-full">
+                        <div className="wrapper">
                             <input type="email" className="input input-bordered input-md w-96 rounded-2xl input-sub" placeholder='Enter Your Email' name="" id="" />
                             <button className="btn-subscribe"><span className='mr-1'>Subscribe</span><FaLongArrowAltRight /></button>
                         </div>
@@ -29,11 +29,11 @@ const Footer = () => {
                             </ul>
                         </nav>
                     </div>
-                </nav>
+                </div>
 
-                <aside>
-                    <img className="max-w-sm" src={footerIm} alt="footer-image" />
-                </aside>
+                <div className=''>
+                    <img className="w-auto md:w-96" src={footerIm} alt="footer-image" />
+                </div>
             </div>
         </footer>
     );

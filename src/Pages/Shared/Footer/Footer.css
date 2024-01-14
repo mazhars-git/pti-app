@@ -1,6 +1,10 @@
-
-.input-sub{
-    position: absolute;
+.wrapper{
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+.wrapper input{
+    width: 100%;
 }
 
 .btn-subscribe{
@@ -10,7 +14,7 @@
     background: orangered;
     color: #fff;
     border-radius: 12px;
-    position: relative;
+    position: absolute;
     top: 8px;
-    left: 245px;   
+    right: 10px;
 }
