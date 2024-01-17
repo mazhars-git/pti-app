@@ -5,14 +5,15 @@ const NavBar = () => {
 
     return (
         <div className="max-w-screen-lg mx-auto navbar bg-base-100">
-            <div className="flex-1">
+            <div className="navbar-start">
                 <a className="btn btn-ghost text-3xl lowercase">pti.</a>
             </div>
-            <div className="flex-none gap-2">
-                <div className="form-control">
-                    <input type="text" placeholder="Search Audio book" className="input input-bordered w-44" />
-                </div>
 
+            <div className="navbar">
+            <input type="text" placeholder="Type here" className="input input-bordered input-secondary w-full max-w-lg" />
+            </div>
+
+            <div className="navbar-end">
                 <div className="">
                     <ul className="menu menu-horizontal px-1">
                         <li>
