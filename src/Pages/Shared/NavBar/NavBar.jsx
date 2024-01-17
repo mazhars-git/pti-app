@@ -10,7 +10,7 @@ const NavBar = () => {
             </div>
 
             <div className="navbar">
-            <input type="text" placeholder="Type here" className="input input-bordered input-secondary w-full max-w-lg" />
+            <input type="text" placeholder="Type here" className="input input-bordered input-base-200 w-full max-w-lg" />
             </div>
 
             <div className="navbar-end">
@@ -48,8 +48,6 @@ const NavBar = () => {
                                 <span className="badge">New</span>
                             </a>
                         </li>
-                        <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
                     </ul>
                 </div>
             </div>

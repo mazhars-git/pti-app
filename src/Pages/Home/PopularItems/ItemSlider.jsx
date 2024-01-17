@@ -4,7 +4,6 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../PopularItems/PopularItems.css';
-import autoprefixer from 'autoprefixer';
 
 const ItemSlider = () => {
     const [cardInfo, setCardInfo] = useState([]);
@@ -17,7 +16,7 @@ const ItemSlider = () => {
     var settings = {
         dots: false,
         infinite: true,
-        speed: 500,
+        speed: 400,
         slidesToShow: 5,
         slidesToScroll: 4
     };    
