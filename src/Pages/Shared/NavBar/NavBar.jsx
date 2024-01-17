@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 
     return (
         <div className="max-w-screen-lg mx-auto navbar bg-base-100">
             <div className="navbar-start">
-                <a className="btn btn-ghost text-3xl lowercase">pti.</a>
+                <a className="btn btn-ghost text-4xl lowercase font-bold">pti.</a>
             </div>
 
             <div className="navbar">

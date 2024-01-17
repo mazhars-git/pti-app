@@ -18,7 +18,7 @@ const Footer = () => {
 
                     <div className="flex flex-col-reverse lg:flex-row gap-5">
                         <div className="mt-5 md:mt-20 text-center md:text-left">
-                            <h1 className="footer-title text-4xl lowercase pb-2 text-black">pti<span className='text-orange-600'>.</span></h1>
+                            <h1 className="footer-title text-4xl lowercase pb-2 text-black font-bold">pti<span className='text-orange-600'>.</span></h1>
                             <p className="font-semibold text-[10px] md:text-sm">Copyright&copy;Tripp.All Right Reserved</p>
                         </div>
                         <div className="mt-10 md:mt-28">
