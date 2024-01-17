@@ -31,7 +31,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className=''>
+                <div className='hidden md:flex justify-end'>
                     <img className="w-auto md:w-96" src={footerIm} alt="footer-image" />
                 </div>
             </div>
