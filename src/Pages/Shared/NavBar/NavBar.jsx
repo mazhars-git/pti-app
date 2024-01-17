@@ -14,14 +14,14 @@ const NavBar = () => {
             </div>
 
             <div className="navbar-end">
-                <div className="">
+                <div className="z-30">
                     <ul className="menu menu-horizontal px-1">
                         <li>
                             <details>
                                 <summary>
                                     MENU
                                 </summary>
-                                <ul className="p-2 bg-base-100 rounded-t-none">
+                                <ul className="bg-base-100 rounded-t-none w-36">
                                     <li><a>Home</a></li>
                                     <li><a>Details</a></li>
                                     <li><a>Category</a></li>
