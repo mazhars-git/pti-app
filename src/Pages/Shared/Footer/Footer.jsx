@@ -16,22 +16,22 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-5">
-                        <nav className="mt-20">
-                            <header className="footer-title text-4xl lowercase pb-2 text-black">pti<span className='text-orange-600'>.</span></header>
+                    <div className="flex flex-col-reverse lg:flex-row gap-5">
+                        <div className="mt-5 md:mt-20 text-center md:text-left">
+                            <h1 className="footer-title text-4xl lowercase pb-2 text-black">pti<span className='text-orange-600'>.</span></h1>
                             <p className="font-semibold text-[10px] md:text-sm">Copyright&copy;Tripp.All Right Reserved</p>
-                        </nav>
-                        <nav className="mt-28">
-                            <ul className='flex gap-2 justify-end md:justify-center'>
+                        </div>
+                        <div className="mt-10 md:mt-28">
+                            <ul className='flex justify-center md:justify-end gap-2'>
                                 <li className='bg-slate-200 p-3 rounded-full cursor-pointer'><a className="link link-hover text-orange-500"><FaGoogle /></a></li>
                                 <li className='bg-slate-200 p-3 rounded-full cursor-pointer'><a className="link link-hover text-orange-500"><TiSocialTwitter /></a></li>
                                 <li className='bg-slate-200 p-3 rounded-full cursor-pointer'><a className="link link-hover text-orange-500"><SlSocialInstagram /></a></li>
                             </ul>
-                        </nav>
+                        </div>
                     </div>
                 </div>
 
-                <div className='flex justify-center md:justify-end'>
+                <div className=''>
                     <img className="w-auto md:w-96" src={footerIm} alt="footer-image" />
                 </div>
             </div>
