@@ -7,9 +7,9 @@ const PopularItems = () => {
         register,
         handleSubmit,
         formState: { errors },
-      } = useForm()
-      const onSubmit = (data) => console.log(data)
-    
+    } = useForm()
+    const onSubmit = (data) => console.log(data)
+
     return (
         <div className="max-w-screen-lg mx-auto pt-10">
             <div className="flex justify-between pb-2">
@@ -20,13 +20,13 @@ const PopularItems = () => {
                     {/* Open the modal using document.getElementById('ID').showModal() method */}
                     <button className="text-orange-500 font-semibold mr-12" onClick={() => document.getElementById('my_modal_5').showModal()}>Add More</button>
                     <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
-                        <div className="modal-box">
 
+                        <div className="modal-box bg-orange-500">
                             <div>
                                 <form onSubmit={handleSubmit(onSubmit)}>
                                     <label htmlFor="itemName">Item Name</label>
                                     <input
-                                        className='input form-control input-bordered mt-2'
+                                        className='input form-control input-bordered mt-1 w-96'
                                         id="itemName"
                                         {...register("itemName", { required: true, maxLength: 30 })}
                                     />
@@ -36,14 +36,16 @@ const PopularItems = () => {
                                     {errors.name && errors.name.type === "maxLength" && (
                                         <span>Max length exceeded</span>
                                     )} <br />
+                                    
                                     <label htmlFor="file">Upload Image</label>
-                                    <input className='form-control pt-2' type="file" name='file' /> <br />
+                                    <input className='form-control pt-3' type="file" name='file' /> <br />
+
                                     <input className='btn' type="submit" />
                                 </form>
                             </div>
 
 
-                            <div className="modal-action">
+                            <div className="modal-action mt-0">
                                 <form method="dialog">
                                     {/* if there is a button in form, it will close the modal */}
                                     <button className="btn">Close</button>
