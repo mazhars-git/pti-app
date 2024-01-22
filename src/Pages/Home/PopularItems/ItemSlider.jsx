@@ -42,7 +42,7 @@ const ItemSlider = () => {
             {  
                 cardInfo.map((item) =>
                 <PopularItemCard
-                    key={item.id}
+                    key={item.Id}
                     item={item}
                 >
                 </PopularItemCard>
