@@ -1,12 +1,12 @@
 import React from 'react';
 
 const PopularItemCard = ({ item }) => {
-    const { Name, ImageUrl } = item;
+    const { strMeal, strMealThumb } = item;
 
     return (
         <div>
-            <div className=''><img className="px-2 rounded-2xl h-64" src={ImageUrl} alt="" /></div>
-            <p className='text-center pt-1'>{Name}</p>
+            <div className=''><img className="px-2 rounded-2xl " src={strMealThumb} alt="" /></div>
+            <p className='text-center pt-1'>{strMeal}</p>
         </div>
     );
 };

@@ -9,9 +9,9 @@ const ItemSlider = () => {
     const [cardInfo, setCardInfo] = useState([]);
 
     useEffect(() => {
-        fetch('http://www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10')
+        fetch('https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood')
             .then(res => res.json())
-            .then(data => setCardInfo(data.Items));
+            .then(data => setCardInfo(data.meals));
     }, [])
     var settings = {
         dots: false,
@@ -42,7 +42,7 @@ const ItemSlider = () => {
             {  
                 cardInfo.map((item) =>
                 <PopularItemCard
-                    key={item.Id}
+                    key={item.idMeal}
                     item={item}
                 >
                 </PopularItemCard>
